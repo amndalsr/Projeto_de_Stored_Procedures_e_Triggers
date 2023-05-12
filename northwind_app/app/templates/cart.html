@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Carrinho</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID do Produto</th>
+                <th>Nome do Produto</th>
+                <th>Preço</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in session['cart'] %}
+                <tr>
+                    <td>{{ product.id }}</td>
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.price }}</td>
+                    <td>
+                      <a href="{{ url_for('remove_from_cart', index=loop.index) }}" class="btn btn-danger">Remover</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <h3>Total: R$ {{ session['cart_total'] }}</h3>
+{% endblock %}

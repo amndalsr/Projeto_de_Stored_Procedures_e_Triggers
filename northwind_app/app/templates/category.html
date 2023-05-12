@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>{{ category.CategoryName }}</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Nome do Produto</th>
+        <th>Preço Unitário</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for product in products %}
+        <tr>
+          <td>{{ product.ProductName }}</td>
+          <td>{{ product.UnitPrice }}</td>
+          <td>
+            <a href="{{ url_for('add_to_cart', product_id=product.ProductID) }}" class="btn btn-primary">Adicionar ao carrinho</a>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

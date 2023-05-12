@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Customers</h1>
+<h2>Adicionar novo cliente</h2>
+<th>
+    <form action="{{ url_for('add_customer') }}" method="post">
+        <label for="CustomerID">CustomerID:</label>
+        <input type="text" id="CustomerID" name="CustomerID" required>
+        <label for="CompanyName">CompanyName:</label>
+        <input type="text" id="CompanyName" name="CompanyName" required>
+        <label for="ContactName">ContactName:</label>
+        <input type="text" id="ContactName" name="ContactName">
+        <label for="ContactTitle">ContactTitle:</label>
+        <input type="text" id="ContactTitle" name="ContactTitle">
+        <label for="Address">Address:</label>
+        <input type="text" id="Address" name="Address">
+        <label for="City">City:</label>
+        <input type="text" id="City" name="City">
+        <label for="Region">Region:</label>
+        <input type="text" id="Region" name="Region">
+        <label for="PostalCode">PostalCode:</label>
+        <input type="text" id="PostalCode" name="PostalCode">
+        <label for="Country">Country:</label>
+        <input type="text" id="Country" name="Country">
+        <label for="Phone">Phone:</label>
+        <input type="text" id="Phone" name="Phone">
+        <label for="Fax">Fax:</label>
+        <input type="text" id="Fax" name="Fax">
+        <button type="submit" class="btn btn-success">Adicionar</button>
+    </form>
+</th>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>CustomerID</th>
+            <th>CompanyName</th>
+            <th>ContactName</th>
+            <th>ContactTitle</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>Region</th>
+            <th>PostalCode</th>
+            <th>Country</th>
+            <th>Phone</th>
+            <th>Fax</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for customer in customers %}
+        <tr>
+            <td>{{ customer.CustomerID }}</td>
+            <td>{{ customer.CompanyName }}</td>
+            <td>{{ customer.ContactName }}</td>
+            <td>{{ customer.ContactTitle }}</td>
+            <td>{{ customer.Address }}</td>
+            <td>{{ customer.City }}</td>
+            <td>{{ customer.Region }}</td>
+            <td>{{ customer.PostalCode }}</td>
+            <td>{{ customer.Country }}</td>
+            <td>{{ customer.Phone }}</td>
+            <td>{{ customer.Fax }}</td>
+            <td>
+                <form action="{{ url_for('delete_customer', CustomerID=customer.CustomerID) }}" method="post">
+                    <button type="submit" class="btn btn-danger">Excluir</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

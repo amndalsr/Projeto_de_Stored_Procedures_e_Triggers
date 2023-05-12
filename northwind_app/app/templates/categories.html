@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Categorias</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Nome da Categoria</th>
+        <th>Descrição</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for category in categories %}
+        <tr>
+          <td>{{ category.CategoryName }}</td>
+          <td>{{ category.Description }}</td>
+          <td>
+            <a href="{{ url_for('category', CategoryID=category.CategoryID) }}" class="btn btn-primary">Ver Produtos</a>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
