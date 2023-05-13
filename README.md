@@ -11,13 +11,28 @@
 - Rotas e controladores usadas para mapear URLs para funções específicas que lidam com as solicitações e retornam respostas;
 - Gerenciamento de sessões usadas para armazenar os produtos no carrinho e o valor total.
 
-### Funcionalidades atendidas pela aplicação:
+### 🎏Funcionalidades atendidas pela aplicação:
 
 1. Visualização / Inserção / remoção / atualização de clientes ✔️
 2. Visualização de compras no carrinho ✔️
 3. Inserção de uma compra com vários produtos ✔️
 
-### 💡Equipe de desenvolvedores do projeto:
+### 💡Como executar a aplicação:
+
+- Faça um cópia do repositório da aplicação e abra no Visual Studio Code;
+- Certifique-se de que você tem o Python instalado na sua máquina;
+- Abra o terminal no VSCode e instale as dependências usando o seguinte comando:
+-  'pip install Flask SQLAlchemy Flask-SQLAlchemy pyodbc'.
+- Navegue ate a pasta princial do projeto pelo terminal, exemplo: 
+-  'cd Northwind_app'.
+- Em seguida execute o seguinte comando para iniciar a aplicação:
+-  'python run.py'
+
+📌A aplicação será iniciada e ficará acessível no navegador em http://localhost:5000/.
+
+📌Obs: Isso só irá funcionar se a integração com o banco de dados estiver correta!
+
+### 🚀Equipe de desenvolvedores do projeto:
 <table>
   <tr>
     <td align="center"><a href="https://github.com/andrecosta20"><img style="border-radius: 50%;" src="https://github.com/amndalsr/Grafos/assets/72527935/c91f5126-8b8e-418e-87f8-fbb169b4e249" width="100px;" alt=""/><br /><sub><b>André Costa</b></sub></a><br /><a href="https://github.com/andrecosta20">🚀</a></td>
