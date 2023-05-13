@@ -27,8 +27,7 @@
 -  'cd Northwind_app'.
 - Em seguida execute o seguinte comando para iniciar a aplicação:
 -  'python run.py'
-
-📌A aplicação será iniciada e ficará acessível no navegador em http://localhost:5000/.
+- A aplicação será iniciada e ficará acessível no navegador em http://localhost:5000/.
 
 📌Obs: Isso só irá funcionar se a integração com o banco de dados estiver correta!
 
