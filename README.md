@@ -1,4 +1,4 @@
-## Projeto de Stored Procedures e Triggers
+## Projeto de Stored Procedures e Triggers 🔖
 
 ### Aplicação usando banco de dados Northwind, com as seguintes tecnologias:
 - Python como linguagem de programação na construção do back-end;
@@ -13,11 +13,11 @@
 
 ### Funcionalidades atendidas pela aplicação:
 
-1. Visualização / Inserção / remoção / atualização de clientes
-2. Visualização de compras
-3. Inserção de uma compra com vários produtos
+1. Visualização / Inserção / remoção / atualização de clientes ✔️
+2. Visualização de compras no carrinho ✔️
+3. Inserção de uma compra com vários produtos ✔️
 
-### Equipe de desenvolvedora do projeto
+### 💡Equipe de desenvolvedores do projeto:
 <table>
   <tr>
     <td align="center"><a href="https://github.com/andrecosta20"><img style="border-radius: 50%;" src="https://github.com/amndalsr/Grafos/assets/72527935/c91f5126-8b8e-418e-87f8-fbb169b4e249" width="100px;" alt=""/><br /><sub><b>André Costa</b></sub></a><br /><a href="https://github.com/andrecosta20">🚀</a></td>
