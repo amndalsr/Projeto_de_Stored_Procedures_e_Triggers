@@ -24,7 +24,7 @@
 - Abra o terminal no VSCode e instale as dependências usando o seguinte comando:
 -  'pip install Flask SQLAlchemy Flask-SQLAlchemy pyodbc'.
 - Navegue ate a pasta princial do projeto pelo terminal, exemplo: 
--  'cd Northwind_app'.
+-  'cd Northwind_app'
 - Em seguida execute o seguinte comando para iniciar a aplicação:
 -  'python run.py'
 - A aplicação será iniciada e ficará acessível no navegador em http://localhost:5000/.
